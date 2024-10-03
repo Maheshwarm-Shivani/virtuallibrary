@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.app {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #1976d2;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Search Bar */
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  margin-left: 5px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: #1565c0;
+}
+
+/* Book List and Cards */
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center the book cards */
+}
+
+.book-card {
+  background: #e3f2fd;
+  border-radius: 8px;
+  padding: 15px;
+  width: calc(45% - 10px);
+  text-align: center; /* Center text in book cards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.book-card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.book-card h3 {
+  font-size: 1.2em;
+  margin: 5px 0;
+  color: #555;
+}
+
+.book-card p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+/* Button Styles */
+button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px; /* Adds space between all buttons */
+}
+
+button:hover {
+  background: #1565c0;
+}
+
+/* Button Group (For Multiple Buttons Together) */
+.button-group {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 15px; /* Adds gap between the buttons */
+}
+
+.button-group button {
+  margin: 0; /* Remove margin since gap handles spacing */
+}
+
+a {
+  display: block;
+  margin-top: 10px;
+  color: #1976d2;
+  text-align: center;
+}
+
+/* My Library Page */
+.my-library-page {
+  margin-top: 20px;
+}
+
+.my-library {
+  max-width: 800px; /* Max width for library */
+  margin: 20px auto; /* Center the library */
+  padding: 20px; /* Space around the content */
+  background-color: #fff; /* White background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.library-book {
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .book-list {
+    flex-direction: column; /* Stack items on smaller screens */
+    align-items: center;
+  }
+
+  .book-card {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  .my-library, .book-details {
+    padding: 10px; /* Less padding on smaller screens */
+  }
+}
